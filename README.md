@@ -161,7 +161,7 @@ Edite `data/booking_data.json` com novos cenários.
 ## 🚦 Status dos Testes
 
 - ✅ **Testes de Autenticação:** 3/3 passando
-- ✅ **Testes de Reserva:** 4/5 passando
+- ✅ **Testes de Reserva:** 5/5 passando
 - ✅ **Cobertura CRUD:** Completa
 - ✅ **Workflows:** Funcionais
 

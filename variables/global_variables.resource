@@ -1,7 +1,7 @@
 *** Variables ***
 # API Configuration
 ${BASE_URL}              https://restful-booker.herokuapp.com
-${TIMEOUT}               60
+${TIMEOUT}               120
 
 # API Endpoints
 ${AUTH_ENDPOINT}         /auth

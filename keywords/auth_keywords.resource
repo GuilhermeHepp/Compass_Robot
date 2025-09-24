@@ -12,11 +12,17 @@ Generate Authentication Token
     ...    username=${username}
     ...    password=${password}
     
-    ${response}=    POST On Session
-    ...    ${API_SESSION}
-    ...    ${AUTH_ENDPOINT}
-    ...    json=${auth_payload}
-    ...    expected_status=200
+    FOR    ${attempt}    IN RANGE    3
+        ${status}=    Run Keyword And Return Status
+        ...    POST On Session    ${API_SESSION}    ${AUTH_ENDPOINT}    json=${auth_payload}    expected_status=200
+        IF    ${status}
+            ${response}=    POST On Session    ${API_SESSION}    ${AUTH_ENDPOINT}    json=${auth_payload}    expected_status=200
+            BREAK
+        END
+        Sleep    5s
+    END
+    
+    Should Be True    ${status}    Failed to authenticate after 3 attempts
     
     Log Response Details    ${response}
     
