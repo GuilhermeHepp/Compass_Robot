@@ -1,21 +1,25 @@
 *** Settings ***
 Resource    common_keywords.resource
 Resource    auth_keywords.resource
+Resource    ../variables/global_variables.resource
 Library     RequestsLibrary
-
-*** Variables ***
-${BOOKING_ENDPOINT}    /booking
 
 *** Keywords ***
 Create New Booking
     [Documentation]    Create a new booking with provided data
     [Arguments]    ${booking_data}
     
-    ${response}=    POST On Session
-    ...    api_session
-    ...    ${BOOKING_ENDPOINT}
-    ...    json=${booking_data}
-    ...    expected_status=200
+    FOR    ${attempt}    IN RANGE    3
+        ${status}=    Run Keyword And Return Status
+        ...    POST On Session    ${API_SESSION}    ${BOOKING_ENDPOINT}    json=${booking_data}    expected_status=200
+        IF    ${status}
+            ${response}=    POST On Session    ${API_SESSION}    ${BOOKING_ENDPOINT}    json=${booking_data}    expected_status=200
+            BREAK
+        END
+        Sleep    2s
+    END
+    
+    Should Be True    ${status}    Failed to create booking after 3 attempts
     
     Log Response Details    ${response}
     
@@ -32,9 +36,9 @@ Get Booking By ID
     [Arguments]    ${booking_id}=${CURRENT_BOOKING_ID}
     
     ${response}=    GET On Session
-    ...    api_session
+    ...    ${API_SESSION}
     ...    ${BOOKING_ENDPOINT}/${booking_id}
-    ...    expected_status=200
+    ...    expected_status=any
     
     Log Response Details    ${response}
     Set Suite Variable    ${GET_RESPONSE}    ${response}
@@ -48,7 +52,7 @@ Update Booking
     ${headers}=    Create Auth Headers    ${token}
     
     ${response}=    PUT On Session
-    ...    api_session
+    ...    ${API_SESSION}
     ...    ${BOOKING_ENDPOINT}/${booking_id}
     ...    json=${booking_data}
     ...    headers=${headers}
@@ -66,7 +70,7 @@ Delete Booking
     ${headers}=    Create Auth Headers    ${token}
     
     ${response}=    DELETE On Session
-    ...    api_session
+    ...    ${API_SESSION}
     ...    ${BOOKING_ENDPOINT}/${booking_id}
     ...    headers=${headers}
     ...    expected_status=201

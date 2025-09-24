@@ -3,16 +3,12 @@ Library    RequestsLibrary
 Library    Collections
 Library    OperatingSystem
 Library    JSONLibrary
-
-*** Variables ***
-${BASE_URL}    https://restful-booker.herokuapp.com
-${TIMEOUT}     30.0
+Resource   ../variables/global_variables.resource
 
 *** Keywords ***
 Setup Test Session
     [Documentation]    Initialize API session for testing
-    Create Session    api_session    ${BASE_URL}    timeout=${TIMEOUT}
-    Set Suite Variable    ${SESSION_ALIAS}    api_session
+    Create Session    ${API_SESSION}    ${BASE_URL}    timeout=${TIMEOUT}
 
 Teardown Test Session
     [Documentation]    Clean up API session
@@ -20,7 +16,7 @@ Teardown Test Session
 
 Load Test Data
     [Documentation]    Load test data from JSON file
-    [Arguments]    ${data_file}=booking_data.json
+    [Arguments]    ${data_file}=${DEFAULT_DATA_FILE}
     ${data_path}=    Join Path    ${EXECDIR}    data    ${data_file}
     ${test_data}=    Load JSON From File    ${data_path}
     RETURN    ${test_data}

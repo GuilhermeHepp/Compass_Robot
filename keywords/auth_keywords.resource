@@ -1,21 +1,19 @@
 *** Settings ***
 Resource    common_keywords.resource
+Resource    ../variables/global_variables.resource
 Library     RequestsLibrary
-
-*** Variables ***
-${AUTH_ENDPOINT}    /auth
 
 *** Keywords ***
 Generate Authentication Token
     [Documentation]    Generate authentication token for API access
-    [Arguments]    ${username}=admin    ${password}=password123
+    [Arguments]    ${username}=${DEFAULT_USERNAME}    ${password}=${DEFAULT_PASSWORD}
     
     ${auth_payload}=    Create Dictionary
     ...    username=${username}
     ...    password=${password}
     
     ${response}=    POST On Session
-    ...    api_session
+    ...    ${API_SESSION}
     ...    ${AUTH_ENDPOINT}
     ...    json=${auth_payload}
     ...    expected_status=200

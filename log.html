@@ -5,60 +5,16 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 7.3.2 (Python 3.13.5 on win32)" name="Generator">
+<meta content="Robot Framework 6.1.1 (Python 3.13.5 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
-<style media="all">
-:root {
-    --text-color: black;
-    --background-color: white;
-    --primary-color: #ddd;
-    --secondary-color: #ccc;
-    --link-color: #15c;
-    --link-hover-color: #61c;
-    --highlight-color: #eee;
-    --target-color: #f9f9f9;
-    --pass-color: #97bd61;
-    --fail-color: #ce3e01;
-    --warn-color: #fed84f;
-    --pass-link-color: #098a09;
-    --warn-link-color: #927201;
-    --fail-link-color: #ce3e01;
-    --ascending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
-    --descending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-    }
-}
-[data-theme="dark"] {
-    --text-color: #e2e1d7;
-    --background-color: #1c2227;
-    --primary-color: #26373b;
-    --secondary-color: #424f5a;
-    --link-color: #8cc4ff;
-    --link-hover-color: #bb86fc;
-    --highlight-color: #002b36;
-    --target-color: #1a252e;
-    --pass-link-color: #97bd61;
-    --warn-link-color: #fed84f;
-    --fail-link-color: #ff9b8f;
-    --ascending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAAfn5+////f/cqYgAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
-    --descending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAA////fn5+K6jOaAAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
-}
+<style media="all" type="text/css">
 /* Generic and misc styles */
 body {
     font-family: Helvetica, sans-serif;
     font-size: 0.8em;
-    color: black; /* Fallback value */
-    color: var(--text-color);
+    color: black;
     padding: 6px;
-    background: white; /* Fallback value */
-    background: var(--background-color);
-    margin-left: 15px;
-}
-body[theme-toggled] {
-    transition: background 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
+    background: white;
 }
 table {
     table-layout: fixed;
@@ -73,37 +29,20 @@ br {
     mso-data-placement: same-cell; /* maintain line breaks in Excel */
 }
 hr {
-    background: #ccc; /* Fallback value */
-    background: var(--secondary-color);
+    background: #ccc;
     height: 1px;
     border: 0;
 }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #15c; /* Fallback value */
-    color: var(--link-color);
+    color: #15c;
 }
 a > img {
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: #15c !important; /* Fallback value */
-    border-color: var(--link-color) !important;
+    border: 1px solid #15c !important;
 }
 a:hover, a:active {
     text-decoration: underline;
-    color: #61c; /* Fallback value */
-    color: var(--link-hover-color);
-}
-select {
-    background-color: white; /* Fallback value */
-    background-color: var(--background-color);
-    color: black; /* Fallback value */
-    color: var(--text-color);
-    border-width: 2px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
-    border-radius: 4px;
+    color: #61c;
 }
 .parent-name {
     font-size: 0.7em;
@@ -116,7 +55,7 @@ select {
 #header {
     width: 65em;
     height: 3em;
-    margin: 20px 0 6px 0;
+    margin: 6px 0;
 }
 h1 {
     float: left;
@@ -144,17 +83,14 @@ h2 {
 }
 /* Status text colors -- !important allows using them in links */
 .fail {
-    color: #ce3e01 !important; /* Fallback value */
-    color: var(--fail-link-color) !important;
+    color: #ce3e01 !important;
     font-weight: bold;
 }
 .pass {
-    color: #098a09 !important; /* Fallback value */
-    color: var(--pass-link-color) !important;
+    color: #098a09 !important;
 }
 .skip {
-    color: #927201 !important; /* Fallback value */
-    color: var(--warn-link-color) !important;
+    color: #927201 !important;
     font-weight: bold;
 }
 .label {
@@ -162,10 +98,8 @@ h2 {
     font-size: 0.75em;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: black; /* Fallback value */
-    color: var(--text-color);
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
+    color: black;
+    background-color: #ddd;
     border-radius: 3px;
 }
 .label.debug, .label.trace, .label.error, .label.keyword {
@@ -175,18 +109,15 @@ h2 {
     font-weight: bold;
 }
 .label.pass {
-    background-color: #97bd61; /* Fallback value */
-    background-color: var(--pass-color);
+    background-color: #97bd61;
     color: #000 !important;
 }
 .label.fail, .label.error {
-    background-color: #ce3e01; /* Fallback value */
-    background-color: var(--fail-color);
+    background-color: #ce3e01;
     color: #fff !important;
 }
 .label.skip, .label.warn {
-    background-color: #fed84f; /* Fallback value */
-    background-color: var(--warn-color);
+    background-color: #fed84f;
     color: #000 !important;
 }
 /* Top right header */
@@ -215,8 +146,7 @@ h2 {
     padding: 0.3em 0;
     font-size: 0.9em;
     border-bottom-left-radius: 4px;
-    background: #ddd; /* Fallback value */
-    background: var(--primary-color);
+    background: #ddd;
 }
 /* Statistics table */
 .statistics {
@@ -226,20 +156,15 @@ h2 {
     margin-bottom: 1em;
 }
 .statistics tr:hover {
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #f4f4f4;
     cursor: pointer;
 }
 .statistics th, .statistics td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    border: 1px solid #ccc;
     padding: 0.1em 0.3em;
 }
 .statistics th {
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
+    background-color: #ddd;
     padding: 0.2em 0.3em;
 }
 .statistics td {
@@ -275,33 +200,27 @@ th.stats-col-graph:hover {
 }
 /* Statistics graph */
 .graph, .empty-graph {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    border: 1px solid #ccc;
     width: auto;
     height: 7px;
     padding: 0;
+    background: #aaa;
 }
 .empty-graph {
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #eee;
 }
 .pass-bar, .fail-bar, .skip-bar {
     float: left;
     height: 100%;
 }
 .fail-bar {
-    background: #ce3e01; /* Fallback value */
-    background: var(--fail-color);
+    background: #ce3e01;
 }
 .pass-bar {
-    background: #97bd61; /* Fallback value */
-    background: var(--pass-color);
+    background: #97bd61;
 }
 .skip-bar {
-    background: #fed84f; /* Fallback value */
-    background: var(--warn-color);
+    background: #fed84f;
 }
 /* Tablesorter - adapted from provided Blue Skin */
 .tablesorter-header {
@@ -311,84 +230,30 @@ th.stats-col-graph:hover {
     cursor: pointer;
 }
 .tablesorter-header:hover {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--secondary-color);
+    background-color: #ccc;
 }
 .tablesorter-headerAsc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==); /* Fallback value */
-    background-image: var(--ascending-icon);
-    background-color: #ccc !important; /* Fallback value */
-    background-color: var(--secondary-color) !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
+    background-color: #ccc !important;
 }
 .tablesorter-headerDesc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==); /* Fallback value */
-    background-image: var(--descending-icon);
-    background-color: #ccc !important; /* Fallback value */
-    background-color: var(--secondary-color) !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
+    background-color: #ccc !important;
 }
 .sorter-false {
     background-image: none;
     cursor: default;
 }
 .sorter-false:hover {
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
-}
-#theme-toggle {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 28px;
-    height: 28px;
-    border: none;
-    padding: 4px;
-    z-index: 1000;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background: var(--highlight-color);
-}
-[data-theme="dark"] .dark-mode-icon,
-[data-theme="light"] .light-mode-icon {
-    display: none;
-}
-[data-theme="dark"] .light-mode-icon,
-[data-theme="light"] .dark-mode-icon {
-    display: block;
-}
-@keyframes highlight {
-    0% {
-        background: var(--primary-color)
-    }
-    100% {
-        background: var(--target-color);
-    }
-}
-:target {
-    background: var(--target-color);
-    transition: background 0.3s;
-    animation: highlight 4s;
+    background-color: #ddd;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 /* Icons are from Open Iconic <https://useiconic.com/open/>.
    Licensed under the MIT License. */
-:root {
-    --icon-filter: invert(0);
-    --icon-highlight: var(--secondary-color);
-    --elapsed-color: #666;
-}
-/* @media (prefers-color-scheme: dark) { */
-[data-theme="dark"] {
-    --icon-filter: invert(1);
-    --icon-highlight: #a39990;
-    --elapsed-color: #999;
-}
 /* Containers */
 .suite, .test, #errors {
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     padding: 0.3em 0.2em;
     margin: 0.2em 0;
 }
@@ -417,10 +282,8 @@ th.stats-col-graph:hover {
 }
 .element-header:hover {
     cursor: pointer;
-    background-color: #eee; /* Fallback value */
-    background-color: var(--highlight-color);
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    background-color: #eee;
+    border-color: #ccc;
 }
 .element-header-toggle {
     position: absolute;
@@ -430,14 +293,10 @@ th.stats-col-graph:hover {
     background-position: center;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAQAAABKxSfDAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0JChSkZz20AAAAGklEQVQI12NgQAKMDKzInP8IDhOqMk4G7AAANQwBE427PYUAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2Mmg4di0yaC04eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
     height: 10px;
     width: 10px;
     background-size: 6px 6px;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .closed > .element-header-toggle {
@@ -445,8 +304,7 @@ th.stats-col-graph:hover {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0zIDB2M2gtM3YyaDN2M2gydi0zaDN2LTJoLTN2LTNoLTJ6IiAvPgo8L3N2Zz4=), none;
 }
 .element-header:hover > .element-header-toggle {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
 }
 .element-header-right:hover ~ .element-header-toggle {
     background-color: transparent;
@@ -466,31 +324,23 @@ th.stats-col-graph:hover {
 }
 .name {
     font-weight: bold;
-    white-space: pre-wrap;
-}
-.arg, .assign {
-    white-space: pre-wrap;
 }
 .elapsed {
     float: right;
-    color: #666; /* Fallback value */
-    color: var(--elapsed-color);
+    color: #666;
     padding-left: 1em;
 }
 .link {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHlJREFUGJVtzrEJwmAQBtCn6ASuIKTIBhY2gmghBiJYB1udwk10B8FJbKMBcQFbtbkfJHrVwfu+4/idJR64Y9H7E3higj5O3S8Y44ApLnjhnXCNGhV2yNGggDJwiC02gavUbpDFvscRo4QdXOMKDHBufz3HLYKzNn4AbSkV3fncGQYAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik01Ljg4LjAzYy0uMTguMDEtLjM2LjAzLS41My4wOS0uMjcuMS0uNTMuMjUtLjc1LjQ3YS41LjUgMCAxIDAgLjY5LjY5Yy4xMS0uMTEuMjQtLjE3LjM4LS4yMi4zNS0uMTIuNzgtLjA3IDEuMDYuMjIuMzkuMzkuMzkgMS4wNCAwIDEuNDRsLTEuNSAxLjVjLS40NC40NC0uOC40OC0xLjA2LjQ3LS4yNi0uMDEtLjQxLS4xMy0uNDEtLjEzYS41LjUgMCAxIDAtLjUuODhzLjM0LjIyLjg0LjI1Yy41LjAzIDEuMi0uMTYgMS44MS0uNzhsMS41LTEuNWMuNzgtLjc4Ljc4LTIuMDQgMC0yLjgxLS4yOC0uMjgtLjYxLS40NS0uOTctLjUzLS4xOC0uMDQtLjM4LS4wNC0uNTYtLjAzem0tMiAyLjMxYy0uNS0uMDItMS4xOS4xNS0xLjc4Ljc1bC0xLjUgMS41Yy0uNzguNzgtLjc4IDIuMDQgMCAyLjgxLjU2LjU2IDEuMzYuNzIgMi4wNi40Ny4yNy0uMS41My0uMjUuNzUtLjQ3YS41LjUgMCAxIDAtLjY5LS42OWMtLjExLjExLS4yNC4xNy0uMzguMjItLjM1LjEyLS43OC4wNy0xLjA2LS4yMi0uMzktLjM5LS4zOS0xLjA0IDAtMS40NGwxLjUtMS41Yy40LS40Ljc1LS40NSAxLjAzLS40NC4yOC4wMS40Ny4wOS40Ny4wOWEuNS41IDAgMSAwIC40NC0uODhzLS4zNC0uMi0uODQtLjIyeiIKICAvPgo8L3N2Zz4=), none;
-    filter: var(--icon-filter);
 }
 .expand {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAADtJREFUGJVjYCACKDAwMByA0ljFDjAwMPxnYGB4ABVQgLL/Q+VQBB6gseGmIivCkERXhFUSWRFOSawAAEl7E3uv1iMcAAAAAElFTkSuQmCC);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0xLjUgMGwtMS41IDEuNSA0IDQgNC00LTEuNS0xLjUtMi41IDIuNS0yLjUtMi41eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxKSIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
 }
 .collapse {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAC5JREFUGJVjYCARNEAxTsn/UIyhCFkSQxG6ThQ+C5IpjWhG1yNb4YDFTdjEMAEACi8Q++9Y9TAAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik00IDBsLTQgNCAxLjUgMS41IDIuNS0yLjUgMi41IDIuNSAxLjUtMS41LTQtNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMSkiIC8+Cjwvc3ZnPg==), none;
-    filter: var(--icon-filter);
 }
 .expand, .collapse, .link {
     float: left;
@@ -502,10 +352,7 @@ th.stats-col-graph:hover {
     background-size: 8px 8px;
     background-repeat: no-repeat;
     background-position: center;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .link {
@@ -515,8 +362,7 @@ th.stats-col-graph:hover {
     visibility: visible;
 }
 .expand:hover, .collapse:hover, .link:hover {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
 }
 /* Messages and errors */
 .messages .time, .messages .message {
@@ -557,16 +403,11 @@ th.stats-col-graph:hover {
 .message-row:hover .select-message div {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0MOzhWKZQOAAAASUlEQVQY032PsRHAIAwDX9BkicD+W8UMEqegAQJWKZ/+3sLZJhFGQEZzNaIa4ibh66En867VNaIeoP5WppNuIGoAlOm3g5VC1AdYeQv1BZPRSgAAAABJRU5ErkJggg==);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2MWg4di0xaC04em0wIDJ2MWg2di0xaC02em0wIDJ2MWg4di0xaC04em0wIDJ2MWg2di0xaC02eiIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .select-message:hover div {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
     cursor: pointer;
 }
 /* Message tables - these MUST NOT be combined together because otherwise
@@ -598,7 +439,7 @@ th.stats-col-graph:hover {
     cursor: default;
 }
 </style>
-<style media="print">
+<style media="print" type="text/css">
 body {
     background: white !important;
     padding: 0;
@@ -638,7 +479,7 @@ a:link, a:visited {
     background: #ddd !important;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 #javascript-disabled {
     width: 600px;
     margin: 100px auto 0 auto;
@@ -661,7 +502,7 @@ a:link, a:visited {
     font-style: italic;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 .doc > * {
     margin: 0.7em 1em 0.1em 1em;
     padding: 0;
@@ -673,12 +514,14 @@ a:link, a:visited {
     margin-top: 0.1em;
 }
 .doc table {
+    border: 1px solid #ccc;
     background: transparent;
     border-collapse: collapse;
     empty-cells: show;
     font-size: 0.9em;
 }
 .doc table th, .doc table td {
+    border: 1px solid #ccc;
     background: transparent;
     padding: 0.1em 0.3em;
     height: 1.2em;
@@ -688,32 +531,24 @@ a:link, a:visited {
     letter-spacing: 0.1em;
 }
 .doc pre {
-    border-radius: 2px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #f4f4f4;
 }
 .doc code {
-    border-radius: 2px;
     padding: 0 0.2em;
     letter-spacing: 0.05em;
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #eee;
 }
 .doc li {
     list-style-position: inside;
     list-style-type: square;
 }
-.doc img, .doc table, .doc table th, .doc table td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+.doc img {
+    border: 1px solid #ccc;
 }
 .doc hr {
-    background: #ccc; /* Fallback value */
-    background: var(--secondary-color);
+    background: #ccc;
     height: 1px;
     border: 0;
 }
@@ -724,13 +559,10 @@ function toggleSuite(suiteId) {
     toggleElement(suiteId, ['keyword', 'suite', 'test']);
 }
 function toggleTest(testId) {
+    toggleElement(testId, ['keyword']);
     var test = window.testdata.findLoaded(testId);
-    var autoExpand = test.status == "FAIL" || test.status == "SKIP";
-    var closed = $('#' + testId).children('.element-header').hasClass('closed');
-    if (autoExpand && closed)
+    if (test.status == "FAIL" || test.status == "SKIP")
         expandFailed(test);
-    else
-        toggleElement(testId, ['keyword']);
 }
 function toggleKeyword(kwId) {
     toggleElement(kwId, ['keyword']);
@@ -1018,6 +850,7 @@ window.model = (function () {
         suite.populateSuites = createIterablePopulator('Suite');
         suite.childrenNames = ['keyword', 'suite', 'test'];
         suite.callWhenChildrenReady = function (callable) { callable(); };
+        suite.message = data.message;
         suite.children = function () {
             return suite.keywords().concat(suite.tests()).concat(suite.suites());
         };
@@ -1108,7 +941,6 @@ window.model = (function () {
             name: data.name,
             doc: data.doc,
             status: data.status,
-            message: data.message,
             times: data.times,
             id: data.parent ? data.parent.id + '-' + data.id : data.id
         };
@@ -1129,6 +961,7 @@ window.model = (function () {
                 return test.keywords();
         };
         test.tags = data.tags;
+        test.message = data.message;
         test.matchesTagPattern = function (pattern) {
             return containsTagPattern(test.tags, pattern);
         };
@@ -1139,12 +972,13 @@ window.model = (function () {
     }
     function Keyword(data) {
         var kw = createModelObject(data);
+        var flatTypes = ['RETURN', 'BREAK', 'CONTINUE'];
         kw.libname = data.libname;
         kw.fullName = (kw.libname ? kw.libname + '.' : '') + kw.name;
         kw.type = data.type;
         kw.template = 'keywordTemplate';
         kw.arguments = data.args;
-        kw.assign = data.assign + (data.assign ? ' =  ' : '');
+        kw.assign = data.assign + (data.assign ? ' =' : '');
         kw.tags = data.tags;
         kw.timeout = data.timeout;
         kw.populateKeywords = createIterablePopulator('Keyword');
@@ -1255,48 +1089,58 @@ window.stats = (function () {
             });
     }
     function calculatePercents(total, passed, failed, skipped) {
-        if (total == 0)
+        if (total == 0) {
             return [0.0, 0.0, 0.0];
+        }
         var pass = 100.0 * passed / total;
         var skip = 100.0 * skipped / total;
         var fail = 100.0 * failed / total;
         if (pass > 0 && pass < 0.1)
-            pass = 0.1;
+            pass = 0.1
         if (fail > 0 && fail < 0.1)
-            fail = 0.1;
+            fail = 0.1
         if (skip > 0 && skip < 0.1)
-            skip = 0.1;
+            skip = 0.1
         if (pass > 99.95 && pass < 100)
-            pass = 99.9;
+            pass = 99.9
         if (fail > 99.95 && fail < 100)
-            fail = 99.9;
+            fail = 99.9
         if (skip > 99.95 && skip < 100)
-            skip = 99.9;
-        return [round1(pass), round1(skip), round1(fail)];
+            skip = 99.9
+        return [Math.round(pass*10)/10, Math.round(skip*10)/10, Math.round(fail*10)/10];
     }
     function calculateWidths(num1, num2, num3) {
         if (num1 + num2 + num3 === 0)
             return [0.0, 0.0, 0.0];
         // Make small percentages better visible
         if (num1 > 0 && num1 < 1)
-            num1 = 1.0;
+            num1 = 1
         if (num2 > 0 && num2 < 1)
-            num2 = 1.0;
+            num2 = 1
         if (num3 > 0 && num3 < 1)
-            num3 = 1.0;
+            num3 = 1
         // Handle situation where some are rounded up
         while (num1 + num2 + num3 > 100) {
-            if (num1 >= num2 && num1 >= num3)
-                num1 = round1(num1 - 0.1);
-            else if (num2 >= num1 && num2 >= num3)
-                num2 = round1(num2 - 0.1);
-            else
-                num3 = round1(num3 - 0.1);
+            if (num1 > num2 && num1 > num3)
+                num1 -= 0.1;
+            else if (num2 > num1 && num2 > num3)
+                num2 -= 0.1;
+            else if (num3 > num1 && num3 > num2)
+                num3 -= 0.1;
+            else if (num1 > num3 && num1 == num2) {
+                num1 -= 0.1;
+                num2 -= 0.1;
+            }
+            else if (num1 > num2 && num1 == num3) {
+                num1 -= 0.1;
+                num3 -= 0.1;
+            }
+            else if (num2 > num1 && num2 == num3) {
+                num2 -= 0.1;
+                num3 -= 0.1;
+            }
         }
-        return [num1, num2, num3];
-    }
-    function round1(num) {
-        return Math.round(num*10) / 10;
+        return [Math.ceil(num1*10)/10, Math.ceil(num2*10)/10, Math.ceil(num3*10)/10];
     }
     return {
         Statistics: Statistics
@@ -1513,9 +1357,8 @@ window.testdata = function () {
     var _statistics = null;
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
-    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF',
-                         'ELSE IF', 'ELSE', 'RETURN', 'VAR', 'TRY', 'EXCEPT', 'FINALLY',
-                         'WHILE', 'GROUP', 'CONTINUE', 'BREAK', 'ERROR'];
+    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
+                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1558,7 +1401,6 @@ window.testdata = function () {
         return createKeyword(parent, element, strings, index - messages.length);
     }
     function createKeyword(parent, element, strings, index) {
-        var status = element[8];
         var kw = model.Keyword({
             parent: parent,
             type: KEYWORD_TYPES[element[0]],
@@ -1574,12 +1416,7 @@ window.testdata = function () {
                 this.doc = function () { return doc; };
                 return doc;
             },
-            status: parseStatus(status),
-            message: function () {
-                var msg = status.length == 4 ? strings.get(status[3]) : '';
-                this.message = function () { return msg; };
-                return msg;
-            },
+            status: parseStatus(element[8], strings),
             times: model.Times(times(element[8])),
             isChildrenLoaded: typeof(element[9]) !== 'number'
         });
@@ -1790,20 +1627,6 @@ window.testdata = function () {
 }();
 </script>
 <script type="text/javascript">
-const lightModeIcon = `
-<svg class="light-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-    viewBox="0 0 24 24" fill="var(--text-color)">
-    <rect fill="none" height="24" width="24" />
-    <path
-        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
-</svg>`
-const darkModeIcon = `
-<svg class="dark-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-    viewBox="0 0 24 24" fill="var(--text-color)">
-    <rect fill="none" height="24" width="24" />
-    <path
-        d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
-</svg>`
 function removeJavaScriptDisabledWarning() {
     // Not using jQuery here for maximum speed
     document.getElementById('javascript-disabled').style.display = 'none';
@@ -1839,10 +1662,6 @@ function setTitle(suiteName, type) {
 function addHeader() {
     var generated = util.timestamp(window.output.generated);
     $.tmpl('<h1>${title}</h1>' +
-           '<button id=theme-toggle>' +
-             lightModeIcon +
-             darkModeIcon +
-           '</button>' +
            '<div id="generated">' +
              '<span>Generated<br>${generated}</span><br>' +
              '<span id="generated-ago">${ago} ago</span>' +
@@ -1854,7 +1673,6 @@ function addHeader() {
         ago: util.createGeneratedAgoString(generated),
         title: document.title
     }).appendTo($('#header'));
-    document.getElementById('theme-toggle')?.addEventListener('click', theme.onClick);
 }
 function addReportOrLogLink(myType) {
     var url;
@@ -1983,116 +1801,30 @@ function stopPropagation(event) {
     if (event.stopPropagation)
         event.stopPropagation();
 }
-const theme = function () {
-    const storageKey = 'theme-preference';
-    const urlParams = new URLSearchParams(window.location.search);
-    var storage;
-    var theme;
-    function init(givenStorage) {
-        storage = givenStorage;
-        theme = { value: getPreference() };
-        document.body.setAttribute('data-theme', theme.value);
-        reflectPreference();
-        window.matchMedia('(prefers-color-scheme: dark)')
-            .addEventListener('change', ({matches:isDark}) => {
-                theme.value = isDark ? 'dark' : 'light';
-                setPreference();
-            });
-        window.addEventListener('storage', ({key, newValue}) => {
-            if (key === storage.fullKey(storageKey)) {
-                theme.value = newValue === 'dark' ? 'dark' : 'light';
-                setPreference();
-            }
-        });
-    }
-    function getPreference() {
-        if (urlParams.has('theme')) {
-            var urlTheme = urlParams.get('theme') === 'dark' ? 'dark' : 'light';
-            storage.set(storageKey, urlTheme);
-            urlParams.delete('theme');
-            return urlTheme;
-        }
-        if (storage.get(storageKey))
-            return storage.get(storageKey) === 'dark' ? 'dark' : 'light';
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    function setPreference() {
-        storage.set(storageKey, theme.value);
-        reflectPreference();
-    }
-    function reflectPreference() {
-        document.body.setAttribute('data-theme', theme.value);
-        document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value);
-        const event = new Event('theme-change', {value: theme.value});
-        document.dispatchEvent(event);
-    }
-    function onClick() {
-        theme.value = theme.value === 'light' ? 'dark' : 'light';
-        document.body.setAttribute('theme-toggled', "");
-        setPreference();
-    }
-    return {init: init, getPreference: getPreference, setPreference: setPreference,
-        reflectPreference: reflectPreference, onClick: onClick};
-}();
-</script>
-<script type="text/javascript">
-storage = function () {
-    var prefix = 'robot-framework-';
-    var storage;
-    function init(user) {
-        if (user)
-            prefix += user + '-';
-        storage = getStorage();
-    }
-    function getStorage() {
-        // Use localStorage if it's accessible, normal object otherwise.
-        // Inspired by https://stackoverflow.com/questions/11214404
-        try {
-            localStorage.setItem(prefix, prefix);
-            localStorage.removeItem(prefix);
-            return localStorage;
-        } catch (exception) {
-            return {};
-        }
-    }
-    function get(key, defaultValue) {
-        var value = storage[fullKey(key)];
-        if (typeof value === 'undefined')
-            return defaultValue;
-        return value;
-    }
-    function set(key, value) {
-        storage[fullKey(key)] = value;
-    }
-    function fullKey(key) {
-        return prefix + key;
-    }
-    return {init: init, get: get, set: set, fullKey: fullKey};
-}();
 </script>
 <script type="text/javascript">
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,816],[],[[4,0,0,[],[1,118,697],[[0,5,6,0,0,0,0,0,[1,119,3],[[0,7,8,0,9,10,0,0,[1,120,2],[[120,2,11]]]]],[0,12,6,0,0,0,0,0,[1,123,690],[[0,13,14,0,15,16,17,0,[1,123,1],[[123,2,18]]],[0,19,8,0,20,21,22,0,[1,124,686],[[809,2,23],[809,2,24],[809,2,25],[810,2,26]]],[0,27,14,0,28,29,0,0,[1,810,1],[]],[0,30,14,0,31,32,0,0,[1,811,1],[[812,2,33]]],[0,34,14,0,35,36,37,0,[1,812,1],[[813,2,38]]],[8,0,0,0,0,37,0,0,[1,813,0],[]]]],[0,39,6,0,0,0,0,0,[1,814,1],[[0,40,14,0,41,42,0,0,[1,814,1],[[814,2,43]]]]]]]],[],[1,1,0,0]];
+window.output["suite"] = [1,2,3,4,[],[1,0,4441],[],[[5,0,6,[7,8],[1,3251,1186],[[0,9,10,0,11,0,12,0,[1,3252,7],[[0,13,14,0,15,16,17,0,[1,3253,1],[[3254,2,18]]],[0,19,20,0,21,17,12,0,[1,3255,2],[[3256,2,22]]],[8,0,0,0,0,12,0,0,[1,3257,0],[]],[3258,2,22]]],[0,23,24,0,25,26,27,0,[1,3260,1],[[3261,2,28]]],[0,29,24,0,30,31,27,0,[1,3262,1],[[3262,2,32]]],[0,33,34,0,35,27,0,0,[1,3263,795],[[0,36,37,0,38,39,40,0,[1,3264,758],[[4020,2,41],[4021,2,42],[4021,2,43],[4022,2,44]]],[0,45,10,0,46,40,0,0,[1,4023,2],[[0,47,48,0,49,50,0,0,[1,4023,1],[[4023,2,51]]],[0,47,48,0,49,52,0,0,[1,4024,0],[[4024,2,53]]],[0,47,48,0,49,54,0,0,[1,4025,0],[[4025,2,55]]]]],[0,56,20,0,57,58,59,0,[1,4025,28],[[4053,2,60]]],[0,29,24,0,30,61,59,0,[1,4053,1],[[4054,2,62]]],[0,63,48,0,64,65,0,0,[1,4054,1],[[4055,2,66]]],[0,63,48,0,64,67,0,0,[1,4056,1],[[4057,2,68]]],[8,0,0,0,0,59,0,0,[1,4058,0],[]]]],[0,69,34,0,70,71,40,0,[1,4059,176],[[0,72,73,0,74,75,76,0,[1,4061,2],[[0,77,48,0,78,79,76,0,[1,4061,2],[[4062,2,80]]],[8,0,0,0,0,76,0,0,[1,4063,0],[]],[4063,2,80]]],[0,81,37,0,82,83,40,0,[1,4064,162],[[4224,2,84],[4225,2,85],[4225,2,43],[4226,2,86]]],[0,45,10,0,46,40,0,0,[1,4227,3],[[0,47,48,0,49,50,0,0,[1,4227,1],[[4228,2,87]]],[0,47,48,0,49,52,0,0,[1,4228,1],[[4229,2,88]]],[0,47,48,0,49,54,0,0,[1,4230,0],[[4230,2,89]]]]],[0,63,48,0,64,90,0,0,[1,4231,2],[[4232,2,91]]],[8,0,0,0,0,40,0,0,[1,4233,1],[]],[4235,2,86]]],[0,92,10,0,93,94,0,0,[1,4236,5],[[0,95,48,0,96,97,0,0,[1,4238,1],[[4239,2,98]]],[0,47,48,0,49,99,0,0,[1,4240,1],[[4241,2,100]]]]],[0,101,48,0,102,103,0,0,[1,4242,194],[[0,104,34,0,105,71,0,0,[0,4242,194],[[0,106,37,0,107,108,40,0,[0,4242,192],[[4428,2,109],[4429,2,110],[4429,2,43],[4430,5,111]]],[0,45,10,0,46,40,0,0,[3,4435,0],[]],[0,63,48,0,64,112,0,0,[3,4435,0],[]],[8,0,0,0,0,40,0,0,[3,4435,0],[]]]]]]]]],[[1,113,48,0,114,115,0,0,[1,418,2833],[[0,116,10,0,117,0,0,0,[1,419,7],[[0,118,37,0,119,120,0,0,[1,419,5],[[419,2,121]]],[0,63,48,0,64,122,0,0,[1,424,2],[[426,2,123]]]]],[0,124,73,0,125,0,0,0,[1,426,2825],[[0,77,48,0,78,126,127,0,[1,427,2],[[428,2,128]]],[0,36,37,0,38,129,40,0,[1,430,2774],[[3202,2,130],[3203,2,131],[3203,2,43],[3203,2,44]]],[0,45,10,0,46,40,0,0,[1,3204,5],[[0,47,48,0,49,50,0,0,[1,3205,1],[[3206,2,51]]],[0,47,48,0,49,52,0,0,[1,3206,2],[[3207,2,132]]],[0,47,48,0,49,54,0,0,[1,3208,1],[[3208,2,133]]]]],[0,56,20,0,57,134,75,0,[1,3209,38],[[3247,2,135]]],[0,29,24,0,30,136,75,0,[1,3247,1],[[3247,2,137]]],[0,63,48,0,64,138,0,0,[1,3248,1],[[3249,2,139]]],[8,0,0,0,0,75,0,0,[1,3250,0],[]]]]]],[2,140,10,0,141,0,0,0,[1,4440,1],[[0,142,37,0,143,0,0,0,[1,4440,1],[[4441,2,144]]]]]],[1,1,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Api Testing Auth","*c:\\Users\\ghepp\\Compass_Robot\\tests\\api_testing_auth.robot","eNqzSVTIKEpNs1VKy8xJtdLX13e20g8tTi0q1k/PSC0o0HfOzy1ILC6OD8pPyi/RL0ktLinWTyzIjAexMvPS4xNLSzL0ikCSSnYUG2Gjn2gHAMCbNOo=","*cenario 1: criar um novo token para usuario utilizar o Restful-booking","*Criar sessão para API","*api_testing_auth","*Create Session","*RequestsLibrary","*<p>Create Session: create a HTTP session to a server\x3c/p>","*api_testing    <a href=\"https://restful-booker.herokuapp.com\">https://restful-booker.herokuapp.com\x3c/a>","*Creating Session using : alias=api_testing, url=https://restful-booker.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 ","*Criar um token novo","*Create Dictionary","*BuiltIn","*<p>Creates and returns a dictionary based on the given <code>items\x3c/code>.\x3c/p>","*username=admin    password=password123","*${payload}","*${payload} = {'username': 'admin', 'password': 'password123'}","*POST On Session","*<p>Sends a POST request on a previously created HTTP Session.\x3c/p>","*api_testing    /auth    json=${payload}","*${response}","*POST Request : url=https://restful-booker.herokuapp.com/auth \n path_url=/auth \n headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '48', 'Content-Type': 'application/json'} \n body=b'{\"username\": \"admin\", \"password\": \"password123\"}' \n ","eNqtk11v2jAYhe/3KyxLGzcY8kEIpIomMWBb11EGoXRaJ2ScN5AS7Mx2ujLEf58N7KO92sVuj5/4Pec98fh6mqAJqFJwBShClSzitdalippNCUpnVUGWQmxANtYgxaaiZdlgYtuklV6jF0hpqisVe45TRxKoEjy+/mD0NdAUpIr3tTeCa+CaXAFf6XUtQjUvrNXRbz3ZlWBVc3GRM6pzwZv35p4LxNZUKtBxpTPSsZ/0qT6iQ5nXkdtFUyiR53gBcvyo1YkCH739mFhwoOnKgvMmdpfkduOEswTy2XDDhpfJaNATxbRs3jxMBLb0CAoL77GEUki90AJH+JSWcChw3RycFrQ4x8LRF3yTU/y1jrf0cUFXgCO/bXaAVcUYKLXIJGU2Co6chuPWcUbzopLwRHcPdvrkOJQk4uRhJUVVPp8PPC1FzrUdvMemIwucWzLEuZpjL6cM6rWK+adulo6SjjdvT4bT924rlO6IZ2OZ8fnnbz8u6X33yun0h5Pe7KXfv7urHMdrqzyNWasNGXSXJPVTj7Sow0iHhW2yzGhG3TYLaJqeca1iNww6XuCHvo8Pz/fxV8Ccr8jgVwwb9U/A+H9neUW35cW/JjnCT3NY11OQDyCt0XdHQ1YzlVvBbbjo7N6UpQ1lzm7JWHwHCSnp7Sw0eCzNX6NqB/MYliLdxXuszTMyxeNli7GQhkHqt6CbMmyRn+/lHuM=","eNqtkD1PAzEMhnd+hQVDWS5H1QFxKpUqGGCr+iGWLGniXqLm4hD7ivrvSdXyD5j8+uN9ZPut0zvGwrr3mLNe5vxuxOg1mSGkXq/O4indwmw60xwEm2zs0fTIeiwxhv1MW0oJrQRKmSiqfO6mTy/PHXwmRjsWXOP3iCxfpqRK7WCXTljCIaCDj+12tYFyHYDAsMc6AoNxCELgqVYnpfYOY2z2REcsymOh42hyVpaGiYKlcxePxSIVao0gXPlV1p0uVJZCqY9nMO4UGJ2CDWIHcwO+4OH13otk7tr2dpEqaJx4dGRZBWoxtbFiWdrqN8mia0auL1BehvggkZuf6218v/g31Lw1izuAv1RdxOMvMH6fhg==","*${response} = &lt;Response [200]&gt;","*Log To Console","*<p>Logs the given message to the console.\x3c/p>","*Response=${response.status_code}","*Set Suite Variable","*<p>Makes a variable available everywhere within the scope of the current suite.\x3c/p>","*${status}    ${response.status_code}","*${status} = 200","*Set Variable","*<p>Returns the given values which can then be assigned to a variables.\x3c/p>","*${response.json()['token']}","*${token}","*${token} = b4cc7a75d34e9dc","*Conferir se o token foi criado com sucesso","*Should Be Equal As Integers","*<p>Fails if objects are unequal after converting them to integers.\x3c/p>","*${status}    200","*Argument types are:\n&lt;class 'int'&gt;\n&lt;class 'str'&gt;"]);
+window.output["strings"] = window.output["strings"].concat(["*","*Booking Tests","*c:\\Users\\ghepp\\Compass_Robot\\tests\\booking_tests.robot","eNqzSVTIKEpNs1VKy8xJtdLX13e20g8tTi0q1k/PSC0o0HfOzy1ILC6OD8pPyi/RL0ktLinWT8rPz87MS48H8/SKQDJKdpTpt9FPtAMAgccykA==","*<p>Booking API Tests - Complete CRUD Operations\x3c/p>","*Test Delete Existing Booking","*<p>Verify booking deletion functionality\x3c/p>","*booking","*crud","*Load Test Data","*common_keywords","*<p>Load test data from JSON file\x3c/p>","*${test_data}","*Join Path","*OperatingSystem","*<p>Joins the given path part(s) to the given base path.\x3c/p>","*${EXECDIR}, data, ${data_file}","*${data_path}","*${data_path} = C:\\Users\\ghepp\\Compass_Robot\\data\\booking_data.json","*Load Json From File","*JSONLibrary","*<p>Load JSON from file.\x3c/p>","*${test_data} = {'valid_bookings': [{'firstname': 'John', 'lastname': 'Doe', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2024-01-01', 'checkout': '2024-01-15'}, 'additionalneeds': 'Breakfast'...","*Get From Dictionary","*Collections","*<p>Returns a value from the given <code>dictionary\x3c/code> based on the given <code>key\x3c/code>.\x3c/p>","*${test_data}, valid_bookings","*${booking_data}","*${booking_data} = [{'firstname': 'John', 'lastname': 'Doe', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2024-01-01', 'checkout': '2024-01-15'}, 'additionalneeds': 'Breakfast'}, {'firstname': 'J...","*Get From List","*<p>Returns the value specified with an <code>index\x3c/code> from <code>list\x3c/code>.\x3c/p>","*${booking_data}, 1","*${booking_data} = {'firstname': 'Jane', 'lastname': 'Smith', 'totalprice': 200, 'depositpaid': False, 'bookingdates': {'checkin': '2024-02-01', 'checkout': '2024-02-10'}, 'additionalneeds': 'Lunch'}","*Create New Booking","*booking_keywords","*<p>Create a new booking with provided data\x3c/p>","*POST On Session","*RequestsLibrary","*<p>Sends a POST request on a previously created HTTP Session.\x3c/p>","*api_session, ${BOOKING_ENDPOINT}, json=${booking_data}, expected_status=200","*${response}","eNpNkMFqAyEQhu99CvGyEOKuu+2hLOQQSi8l0NKk52J0djUxanW2kIa8e7UNJNfvG/+Z37fX9Ya8w9cECUlPpmgXGjGkvmliRsNk2db7PcRaQ/T7SYRQS39oCjRuJHckCNSf5d0N0yAUxLQ4VR8JIluO4LDqSRWOqL1j8X9farr6vq15NSfVUkoIyJ6d9CpnlOHxx4Q5UTBYgXCdKWrWzAp48s6BRONdgXuAwIQ133BxmLeyFbgRdfHtI78Vm2OAgnMja6QoKc0u5ahzLrD16rjYVic6mJjQiQPQntAX4YDOCbXiytYHg7pA9ChsiEYW3HGekYLgk8EgjMpsEDZBppdvUrlVyvhEpQaZSUnrePfAeMd4WyL/hJ/w1rScnrMSSplysrAOQJUcupqc1PRc5fN/AShHlgE=","eNqtU11T2zAQfO+v0GiG5gErsZ3EJGY8HQopH6ENkBQ6UzoZRT7HLo5lJJnAZPLfe3ICBZ760NfVau927+5iNJ6QK9ClLDSQkFQqj1JjSh22Wgq0SaqczaS8A9VMQcm7ipdlU8hFy4JZMScfiDbcVDryXdchCriWRTQaIp4Cj0HpaNU4lIWBwrBzKOYmbYSk4fW7DYe8PEyeSrAwiueZ4CaTRes3Cu0TkXKlwUSVSVjPfjnipqbeQOwQv0PGUBLf9bvE9cNuELYDcvx1YokDw+c1sUVFmw3cZdvsmmUvGd4c7g4fD7Q3HHfmZ8enl9Syv0FuySuqoJTKTI2kId04ZgXk1MGHTUjTrS8a/qTXGae/HLrgj1M+B4rVMQSqKyFA62miuLBWaOg2Xc+hCc/ySsEb3Fvb6ld1UTaRmx7mSlbl+/pQxKXMCmMLryjOyRK2k0LGdjz1bDYe9Ccdde6r02A4UItkdDnKj/X3m7M8D3oAafvB5Nfj04Md/4t2y8PLi5PlTvvo9rZyXT/QWRyJTgAJ9Gcsbsc+63BXsJ7YC9gs4Qn3AtHlcbylGx15e91e0PO7/YCu3yfyyiJuDBs8G7Fm/1qM/r+bj3xR7v+rl5r81ontewzqAZRt9aRuyWI49nqJmx7Z9o8DM8jCtx/sQi5BQcw+P1nS4LHEzdGNNV7ETMZP0YpuTyeLMR6v33OeARquaJIpbQq+wOjoGS8AB5/zF2S8yEyKkJGG56XKBIL27miMGenMlNyKJjzX8KIa48FoKy1SEAigDN5Lh7k+cz3UqmFs/xXuuXTtUMwks2vK8wIgRgl6XhUipWtr5Q9K4lkC","eNqtkD1PAzEMhnd+hQVDWS5H1QFxKpUqGGCr+iGWLGniXqLm4hD7ivrvSdXyD5j8+uN9ZPut0zvGwrr3mLNe5vxuxOg1mSGkXq/O4indwmw60xwEm2zs0fTIeiwxhv1MW0oJrQRKmSiqfO6mTy/PHXwmRjsWXOP3iCxfpqRK7WCXTljCIaCDj+12tYFyHYDAsMc6AoNxCELgqVYnpfYOY2z2REcsymOh42hyVpaGiYKlcxePxSIVao0gXPlV1p0uVJZCqY9nMO4UGJ2CDWIHcwO+4OH13otk7tr2dpEqaJx4dGRZBWoxtbFiWdrqN8mia0auL1BehvggkZuf6218v/g31Lw1izuAv1RdxOMvMH6fhg==","*${response} = &lt;Response [200]&gt;","*Log Response Details","*<p>Log detailed response information\x3c/p>","*Log","*BuiltIn","*<p>Logs the given message with the given level.\x3c/p>","*Status Code: ${response.status_code}","*Status Code: 200","*Response Headers: ${response.headers}","eNqtkl1v2jAUhv+KZanjojE4CUlDKjR1lBXKtpbCyqR1Qq5zErKF2LWdQoX474tD99Fe7WK35zzW+z62b0BLUWpAI2AJKB2jXWsgSgOlIR+gzMyqFaOW2wtaDvq9mD9JsGMmZZFzZnJRdr5rUZ4ivmJKg+lXJiWRPXLOTIMuIHGQ10UzkMijXoCoFwdh7Ifo4uPcgkPDsgbsYO6TId345thsonSyGBxPtmfancy62eXFeIot/QkKC++wAimUWRqBY7wCJX5UpIQCO/XiILZcHcRw/BXf5gx/c/CabZcsA1ynU+pgXXEOWi9TxbhVwTFtU9fBKcuLSsGLubu36TdNKJmLQ4dMiUq+zocykSIvjQ3e4UoVFjBG6rjTqYn2AW5zse4cHPRb3e8+VONwMlTr9Gp6VVzoz4vLoggjgJX/aIrb2fjsyHuvqRxMr0ebI//87q6i1At1nvR5N4QUevck8ROPdBnlJOInIblPWcrckAcsSZ5xo/vuSRCFkRf0Qrx/fSN/KeZlRoa/RKzsH8X+/7d5w9by9F9dGvilie09A/UIylYdNZXsrH725hO3XfTcv34wU1P17gu5FhtQkJB3TxYabmX9c3Rr/xPWJ/uC","*Response Body: ${response.text}","*Response Body: {\"bookingid\":3198,\"booking\":{\"firstname\":\"Jane\",\"lastname\":\"Smith\",\"totalprice\":200,\"depositpaid\":false,\"bookingdates\":{\"checkin\":\"2024-02-01\",\"checkout\":\"2024-02-10\"},\"additionalneeds\":\"Lunch\"}}","*Get Value From Json","*<p>Get Value From JSON using JSONPath\x3c/p>","*${response.json()}, $.bookingid","*${booking_id}","*${booking_id} = [3198]","*${booking_id}, 0","*${booking_id} = 3198","*Set Suite Variable","*<p>Makes a variable available everywhere within the scope of the current suite.\x3c/p>","*${CURRENT_BOOKING_ID}, ${booking_id}","*${CURRENT_BOOKING_ID} = 3198","*${CREATE_RESPONSE}, ${response}","*${CREATE_RESPONSE} = &lt;Response [200]&gt;","*Delete Booking","*<p>Delete booking by ID\x3c/p>","*${CURRENT_BOOKING_ID}","*Create Auth Headers","*auth_keywords","*<p>Create headers with authentication token\x3c/p>","*${token}","*${headers}","*Create Dictionary","*<p>Creates and returns a dictionary based on the given <code>items\x3c/code>.\x3c/p>","*Cookie=token=${token}","*${headers} = {'Cookie': 'token=f90448b5e968559'}","*DELETE On Session","*<p>Sends a DELETE request on a previously created HTTP Session.\x3c/p>","*api_session, ${BOOKING_ENDPOINT}/${booking_id}, headers=${headers}, expected_status=201","*DELETE Request : url=https://restful-booker.herokuapp.com/booking/3198 \n path_url=/booking/3198 \n headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'token=f90448b5e968559', 'Content-Length': '0'} \n body=None \n ","eNqtk11v2jAUhu/3KyxLHReNyQcQQqpoYjQr/RptYWXSOiGTnJCoIXZtpwUh/vtsYFvbq13sytJ7Hvmc97z2aXwVT2J0B5KzSgIKUS3KKFeKy9C2BUiV1SWZM/YIopmDYI815byZsKVtxKJa2C23F6APSCqqahl5jmshAVSyKhroU0GqiznQFISMNo0BqxRUilxBtVB5I0SNbsNCf+TJmoMRFayUzUtaVCcoyamQoKJaZSQw8Km+1UBTSC3ktdEYOPIcr4McL+z4YctHZ9cTA8aKLnagjbtEXPf664v6aeIXI1rZq2F+3J8edy/tSYAN/BVKw26wAM6EmimGQ7y3TCoosaUL+y3NDnZw+APfFxT/tPCSrmZ0AVg3dxwLyzpJQMpZJmiiClbh0GnqxeCMFmUt4I3ubk33u11TMmH7GRaC1fx9f6hSzopKmcYbrIMywCEqTRzy2YWz9yA/yaj9VJ/7l7FYZqPbUXkmv00vytIPAPLWsyrvx+f9I++LdPjg9mb4ctQ6fXioHcfzZZFGSduHDHpzkrZSj7Spk5Ag6fpkntGMun7SoWl6wJWM3G4n8AOv0/Px9v1GXlnUT4bEv40Ys38tRv/fzUe65Cf/6mUHv3Vi5h6DeAZhRh3uRjKajt0IbtNFh/l1YEpTuvad3LAXEJCSz2sDxSuuX45sbPVHmLN0/epf/ALHhR00","*${response} = &lt;Response [201]&gt;","*Status Code: 201","eNqtkl1P2zAYhf+KZQlyQdx8tHXSoGrqoKPAWIF2dNKYKpO8aaKltrEdaFX1vxO37AOudrHb40c657F9C1oKrgGNgGWgdII2zongBrghn4EvTOEkyIkcF/2Op2sJNjSwMp6sWMmPUVowpcH0a5OT2MKnzOygGWQuCjtoAhKFfthFfph0adKm6OxqasGhYYsd6OGIqKveYH1RP05pOWbcW42Ko8HsKLr0pjG28BeoLLvBCqRQZm4ETnABSvysCYcKu83B3mde7H1w8h3flQz/cPGSreZsAbgp930X6zpNQet5rlhqSsFx4rf8wMU5K6tawZs82Nr2210pmYr9hoUStXzfDzyTouTGFm9wrSoLGCN14nkN0drDrVQsvb2D/qD7ncf6nF4O1TIf34yrM/11dlFVNAYo2k+mupucDw7CT9qXJzfXo+eD9un9fe37IdVl1k87FHLoPZCsnYWkw/yUxGlEyUPOchbQtMuy7BU3uh9E3ZjGYbdH8fb9jfylWPIFGf4SsbJ/FPv/3+aQLeXxv7rs4LcmdvcE1BMoO3W0m2Sz5tltELQC9Lq/eTDTUM3ZN3ItnkFBRj6uLTRcyebnaGf7Ai5k+Fg=","*Response Body: Created","*${DELETE_RESPONSE}, ${response}","*${DELETE_RESPONSE} = &lt;Response [201]&gt;","*Validate Response Status","*<p>Validate HTTP response status code\x3c/p>","*${response}, 201","*Should Be Equal As Integers","*<p>Fails if objects are unequal after converting them to integers.\x3c/p>","*${response.status_code}, ${expected_status}","*Argument types are:\n&lt;class 'int'&gt;\n&lt;class 'str'&gt;","*Response Status: ${response.status_code}","*Response Status: 201","*Run Keyword And Expect Error","*<p>Runs the keyword and checks that the expected error occurred.\x3c/p>","**404*, Get Booking By ID, ${CURRENT_BOOKING_ID}","*Get Booking By ID","*<p>Retrieve booking details by ID\x3c/p>","*GET On Session","*<p>Sends a GET request on a previously created HTTP Session.\x3c/p>","*api_session, ${BOOKING_ENDPOINT}/${booking_id}, expected_status=200","*GET Request : url=https://restful-booker.herokuapp.com/booking/3198 \n path_url=/booking/3198 \n headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} \n body=None \n ","eNqtk0tvGjEUhff9FZallM0Y5j0w0ahSEkKrEBIBIkhNhczMnYcAe2J7wkv8946BPsiqi27P/aR7js91rztGQ5AlZxJQiCqxjHKlShm2WgKkSqslmXO+ANHMQfBFRcuyGfNVS4sFy1qO1WmjT0gqqioZuaZrIAFUchYNuEL3vGJJPc6BJiBktG/ccqaAKdIHlqm8EaJGp2Gg3/J4W4IWFWxUq1zSgl2jOKdCgooqlZK2hu+oOkIvkBjIdtEISmSbtodMO/T80AlQ73Gswa6i2RFs4Q4xs2nfYtnu8e3baEP9kbXbOPfuWvW3GdbwAJaa3WMBJRdqpjgO8Sk0YbDERj04vdPsHAeH3/GkoPiHgVd0M6MZ4NDxTdPAsopjkHKWChqrgjMcmk3TMnBKi2Ul4EK3Dnr78LiUjPnJQyZ4VX7cDywpecGUXrzHdVUaOJdVE+eGjvWcMsgvMoJnZ5EXbhDQvCeTp85WXdk3t6P3XX+l1sOXSRZMHyYD78l+WO/MK+fu9bUyTduXRRLFrg8pdOYkcRKbuNSMSTsOfDJPaUotP/ZokpxxJSMr8Np+2/Y6AT58fJG/ItZHQ7q/guiwfyJG/z/NZ7oqr/81yxG+TKJ9j0C8g9BWvx4taa2uXQtW00Jn/3Vhqqbq2ZQ88zUISMjNVkPdTVlfjmwc6o8w58n24mf8BF+DHlY=","*Url: <a href=\"https://restful-booker.herokuapp.com/booking/3198\">https://restful-booker.herokuapp.com/booking/3198\x3c/a> Expected status: 404 != 200","*${GET_RESPONSE}, ${response}","*Run Keywords","*<p>Executes all the given keywords in a sequence.\x3c/p>","*Setup Test Session, AND, Generate Authentication Token","*Setup Test Session","*<p>Initialize API session for testing\x3c/p>","*Create Session","*<p>Create Session: create a HTTP session to a server\x3c/p>","*api_session, ${BASE_URL}, timeout=${TIMEOUT}","*Creating Session using : alias=api_session, url=https://restful-booker.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=30.0, proxies=None, verify=False,                     debug=0 ","*${SESSION_ALIAS}, api_session","*${SESSION_ALIAS} = api_session","*Generate Authentication Token","*<p>Generate authentication token for API access\x3c/p>","*username=${username}, password=${password}","*${auth_payload}","*${auth_payload} = {'username': 'admin', 'password': 'password123'}","*api_session, ${AUTH_ENDPOINT}, json=${auth_payload}, expected_status=200","*POST Request : url=https://restful-booker.herokuapp.com/auth \n path_url=/auth \n headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '48', 'Content-Type': 'application/json'} \n body=b'{\"username\": \"admin\", \"password\": \"password123\"}' \n ","eNq1k9tv2jAUh9/3V1iWGC8YEpOkSapoWlu6Vl0vKvQyrRNykpNLG+JgOwOG+N9nA7u0T3vZW/TzF5/z+dg31+MJugXZ8FoCClErqqhQqpHhYCBAqqytSMz5C4h+AYK/tKxp+gmfDVirCvQOScVUKyNqWT0kgEleR9cXOi+ApSBktO4e81pBrchnqHNVdEPUpQfdHvqdT1YNmFRvXJUJUyWvB896n0OUFExIUFGrMuKbX06Y2qIPkPYQddAYGkQt6iKLhq4XDl306XJiwJFi+RYcYDsmD+pY+ffz4/Yun2TVw8nFl0w9roY/krM7bOgrqAy8xgIaLtRUcRzinS2pocI9vbA7oOleC4df8X3J8LcenrHllOWAw6GnzwDLNklAymkmWGJUcGj1LbuHM1ZWrYBXub0x1W+3RcmE73rIBW+bt/WhThte1soUXmM9IwPsp6SJ/Wi2c9k5yA8yctRV1qFHHXr6vPh4dTS6DPRnM1sV4zy2gtNlSZ1rZz4sRu7t6fmCzked4cnTU2tZ1JNlGiWOBxkEMUmHKSUOsxLiJwceiTOWMdtLXJame1zJyD5wfc+nbuDizdtT+UuzrHMy+iVjhP9oRv/H6D2bNYf/6rOFX9uY3scgvoMw7Z5t2zKZHr8J7L6N9g56cEpTeu2R3PAFCEjJ0cpAo2Wjb5DsbvTDiHm6itZY6SelLwHOAstx/NiFwPNdN8AG+QlcdSEM","eNq1kl1v2jAUhv9KZIlxE0PifACp0DQgjGkrnYCWTuuETHLy0YXY2M6AIv77Yug+2qvd7M56z2Od8/h4BpKzUoIxARqDkIFxbA5ZqaBU+BOUqcqagdEknaZp/M4XBw46pZwXeURVzsr2o2TllRFlVEhQ/UoluKuvjKg6o0uITYO4xhy4QSziGRYJPD9wPOP99UKDoaLpGWwje42Xaqi6d9thdZsukmI5+vglUfcH5yma3CJNT6HQ8BEJ4EyolWIoQBkI9r3CJRTIrAsXr1V28ULBV3SXU/TNRBu6X9EUUOD4lmUiWUURSLlKBI20CgqslmWbKKF5UQl4kdsn3X12booX7DJDKljFX/eHMuYsL5VufESVKDSgFJdBu10TrQvcitimfXGQb2XfVdOkQQYNMn7cvZsOwutefeSbQzZP11ZvvM+Je+NunSz0ZuMPO7ING87o4aGyLOLLPO5Hrg8J9NY4dmKCXWpFuBt1fLxOaEJtP/JoHD/jSvbtjtf1u8Treej0+lX+0szLFIe/ZLTwH83+/zF6Qzf86l99zvBLGz37HMQPEHrcyXksndXr14Hdso1nh3pxqqbq2j3+zHYgIMaDg4bCPa9/kGyefgIC6fwf","*Response Body: {\"token\":\"f90448b5e968559\"}","*${response.json()}, $.token","*${token} = ['f90448b5e968559']","*${token}, 0","*${token} = f90448b5e968559","*${AUTH_TOKEN}, ${token}","*${AUTH_TOKEN} = f90448b5e968559","*Teardown Test Session","*<p>Clean up API session\x3c/p>","*Delete All Sessions","*<p>Removes all the session objects\x3c/p>","*Deleting All Sessions"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:01","fail":0,"label":"All Tests","pass":1,"skip":0}],[],[{"elapsed":"00:00:01","fail":0,"id":"s1","label":"Api Testing Auth","name":"Api Testing Auth","pass":1,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:01","fail":0,"label":"All Tests","pass":1,"skip":0}],[{"elapsed":"00:00:01","fail":0,"label":"booking","pass":1,"skip":0},{"elapsed":"00:00:01","fail":0,"label":"crud","pass":1,"skip":0}],[{"elapsed":"00:00:04","fail":0,"id":"s1","label":"Booking Tests","name":"Booking Tests","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1758253734077;
+window.output["baseMillis"] = 1758682593895;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 837;
+window.output["generated"] = 4493;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -2102,7 +1834,7 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
 </script>
 <title></title>
 </head>
-<body data-theme="dark">
+<body>
 <div id="javascript-disabled">
   <h1>Opening Robot Framework log failed</h1>
   <ul>
@@ -2112,13 +1844,12 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
   </ul>
 </div>
 <script type="text/javascript">removeJavaScriptDisabledWarning();</script>
+
 <div id="header"></div>
 <div id="statistics-container"></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
-    storage.init();
-    theme.init(storage);
     try {
         var topsuite = window.testdata.suite();
     } catch (error) {
@@ -2126,7 +1857,6 @@ $(document).ready(function() {
         return;
     }
     initLayout(topsuite.name, 'Log');
-    theme.reflectPreference();
     addStatistics();
     addErrors();
     addExecutionLog(topsuite);
@@ -2167,6 +1897,25 @@ function drawErrorsRecursively(errors, target) {
         // Errors may have moved scroll position. Resetting location re-scrolls.
         if (window.location.hash)
             window.location.replace(window.location.hash);
+        highlightLinkTarget();
+    }
+}
+
+function highlightLinkTarget() {
+    if (window.location.hash) {
+        var target = $(window.location.hash);
+        highlight(target);
+    }
+}
+
+function highlight(element, color) {
+    if (color === undefined)
+        color = 242;
+    if (color < 255) {
+        element.css({'background-color': 'rgb('+color+','+color+','+color+')'});
+        setTimeout(function () { highlight(element, color+1); }, 300);
+    } else {
+        element.css({'background-color': ''});
     }
 }
 
@@ -2184,6 +1933,7 @@ function makeElementVisible(id) {
             expandFailed(window.testdata.findLoaded(util.last(ids)));
             window.location.hash = id;
             document.getElementById(id).scrollIntoView();
+            highlightLinkTarget();
         }
     });
 }
@@ -2207,7 +1957,7 @@ function addExecutionLog(main) {
 
 <script type="text/x-jquery-tmpl" id="tagStatisticsRowTemplate">
   <tr class="row-${$item.index}">
-    <td class="stats-col-name" title="${doc}">
+    <td class="stats-col-name" title="{{html doc}}">
       <div class="stat-name">
         <span>{{html label}}</span>
         {{if info}}(${info}){{/if}}
@@ -2381,9 +2131,8 @@ function addExecutionLog(main) {
       <div class="element-header-left" title="${type}  {{if name}}{{html fullName}}  {{/if}}[${status}]">
         <span class="elapsed" title="Elapsed time">${times.elapsedTime}</span>
         <span class="label ${status.toLowerCase()}">${type}</span>
-        <span class="assign">{{html assign}}</span>
+        <span>{{html assign}}</span>
         <span class="name"><span class="parent-name">{{html libname}}{{if libname}} . {{/if}}</span>{{html name}}</span>
-        &nbsp;
         <span class="arg">{{html arguments}}</span>
       </div>
       <div class="element-header-right" onclick="stopPropagation(event)">
@@ -2417,12 +2166,6 @@ function addExecutionLog(main) {
           <th>Start / End / Elapsed:</th>
           <td>${times.startTime} / ${times.endTime} / ${times.elapsedTime}</td>
         </tr>
-        {{if message()}}
-        <tr>
-          <th>Message:</th>
-          <td class="message">{{html message()}}</td>
-        </tr>
-        {{/if}}
       </table>
     </div>
   </div>
@@ -2445,7 +2188,6 @@ function addExecutionLog(main) {
   <div id="log-level-selector">
   Log level:
     <select onchange="logLevelSelected(this.options[selectedIndex].value)">
-      <option value="3">WARN</option>
       <option value="2">INFO</option>
       <option value="1">DEBUG</option>
       {{if showTrace()}}<option value="0">TRACE</option>{{/if}}

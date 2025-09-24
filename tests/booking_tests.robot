@@ -77,8 +77,8 @@ Test Delete Existing Booking
     Validate Response Status    ${response}    201
     
     # Verify booking is deleted
-    Run Keyword And Expect Error    *404*
-    ...    Get Booking By ID    ${CURRENT_BOOKING_ID}
+    ${get_response}=    Get Booking By ID    ${CURRENT_BOOKING_ID}
+    Should Be Equal As Integers    ${get_response.status_code}    404
 
 Test Complete Booking Workflow
     [Documentation]    Test complete booking lifecycle: Create -> Read -> Update -> Delete
